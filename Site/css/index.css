@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: arial;
+}
+
+body{
+    background-color: black;
+}
+
+article{
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+article div{
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2,p{
+    text-align: center;
+    color: white;
+}
