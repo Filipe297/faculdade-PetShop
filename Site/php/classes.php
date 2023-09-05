@@ -5,7 +5,7 @@
     {
 
         public function __construct(){
-            echo "A classe está funcionando";
+            
         }
         
         public function phpalert($msg){
