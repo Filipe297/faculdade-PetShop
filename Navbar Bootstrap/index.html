@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css">
+    <style>
+        .btn-custom {
+            background-color: rgb(255, 143, 26);
+            color: #fff;
+        }
+
+        /* Estilo para o ícone da lupa */
+        .search-icon {
+            background-image: url("https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png");
+            background-repeat: no-repeat;
+            background-position: right center;
+            padding-right: 30px; /* Aumenta o espaço para acomodar o ícone */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="logo" width="30" height="30">
+        </a>
+        <div class="d-flex justify-content-center align-items-center flex-fill"> <!-- Centraliza a barra de pesquisa -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 w-100 search-icon" type="search" placeholder="Pesquisar produtos..." aria-label="Search">
+            </form>
+        </div>
+        <div class="btn-group">
+            <div class="btn-group-vertical"> <!-- Cria uma coluna vertical para os botões -->
+                <button type="button" class="btn btn-custom">Login</button>
+                <button type="button" class="btn btn-custom">Cadastro</button>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex p-2 product-buttons bg-info">
+        <button type="button" class="btn btn-custom mr-2">Gatos</button>
+        <button type="button" class="btn btn-custom mr-2">Cachorros</button>
+        <button type="button" class="btn btn-custom mr-2">Passaros</button>
+        <button type="button" class="btn btn-custom">Peixes</button>
+    </div>
+
+    <!-- Link to Bootstrap JavaScript -->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
