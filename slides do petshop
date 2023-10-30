@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilize o slideshow */
+    .slideshow-container {
+      max-width: 600px;
+      position: relative;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    /* Estilize os botões "próximo" e "anterior" */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      user-select: none;
+    }
+
+    /* Estilize o botão "próximo" */
+    .next {
+      right: 0;
+    }
+
+    /* Quando você passa o mouse sobre os botões, adicione uma cor de fundo semi-transparente */
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+  <div class="mySlides">
+    <img src="https://www.amoviralata.com/wp-content/uploads/2021/06/nome-pet-shop.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://img.freepik.com/vetores-premium/petshop-com-gato-e-cachorro_9645-763.jpg" style="width:100%">
+  </div>
+
+  <!-- Botões "próximo" e "anterior" -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+  }
+</script>
+
+</body>
+</html>
