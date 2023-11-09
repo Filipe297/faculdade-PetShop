@@ -14,12 +14,26 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css">
+        <style>
+            .btn-custom {
+                background-color: rgb(255, 143, 26);
+                color: #fff;
+            }
+    
+            /* Estilo para o ícone da lupa */
+            .search-icon {
+                background-image: url("https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png");
+                background-repeat: no-repeat;
+                background-position: right center;
+                padding-right: 30px; /* Aumenta o espaço para acomodar o ícone */
+            }
+        </style>
 </head>
 
 <body>
     <div class="site">
-        <div class="topnav">
+        <!-- <div class="topnav">
             <div class="search-line">
                 <i class="fa fa-paw" id="open-btn" onclick="openside()"></i>
                 <i class="fa fa-times" id="close-btn" onclick="closeside()"></i>
@@ -40,10 +54,36 @@
                     <li><a href="#" onclick="javascript:sorry()">Login</a></li>
                 </ul>
             </div>
+        </div> -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logos/logo_size.jpg" alt="logo" width="40" height="40">
+            </a>
+            <div class="d-flex justify-content-center align-items-center flex-fill"> <!-- Centraliza a barra de pesquisa -->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 w-100 search-icon" type="search" placeholder="Pesquisar produtos..." aria-label="Search">
+                </form>
+            </div>
+            <div class="btn-group">
+                <div class="btn-group-horizontal"> <!-- Cria uma coluna vertical para os botões -->
+                    <a href="login/index.php" class="btn btn-custom">Login</a>
+                    <a href="login/cadastro.php" class="btn btn-custom">Cadastro</a>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="d-flex p-2 product-buttons bg-info">
+            <button type="button" class="btn btn-custom mr-2">Gatos</button>
+            <button type="button" class="btn btn-custom mr-2">Cachorros</button>
+            <button type="button" class="btn btn-custom mr-2">Passaros</button>
+            <button type="button" class="btn btn-custom">Peixes</button>
         </div>
 
         <header>
-            <div class="side-menu" id="side-menu">
+            <!-- <div class="side-menu" id="side-menu">
                 <ul>
                     <li>Cachorros <i class="fa fa-caret-right"></i>
                         <ul id="gettop">
@@ -86,7 +126,7 @@
                         </ul>
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <div class="slideshow">
                 <div id="slideshow" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
@@ -202,7 +242,7 @@
                                     <img src="assets/high/dogfoodbone.jpg" alt="pic1">
                                 </picture>
                                 <div class="overlay-right">
-                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                    <button onclick="produto('produtos/produto.html')" type="button" class="btn btn-secondary" title="Αγορά">
                                         <i class="fa fa-credit-card"></i>
                                     </button><br>
                                     <button onclick="sorry()" type="button" class="btn btn-secondary"
@@ -229,7 +269,7 @@
                                     <img src="assets/high/dogfood.jpg" alt="pic1">
                                 </picture>
                                 <div class="overlay-right">
-                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                    <button onclick="produto('produtos/foodcachorro.html')" type="button" class="btn btn-secondary" title="Αγορά">
                                         <i class="fa fa-credit-card"></i>
                                     </button><br>
                                     <button onclick="sorry()" type="button" class="btn btn-secondary"
@@ -256,7 +296,7 @@
                                     <img src="assets/high/foodham.jpg" alt="pic1">
                                 </picture>
                                 <div class="overlay-right">
-                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                    <button onclick="produto('produtos/foodramister.html')" type="button" class="btn btn-secondary" title="Αγορά">
                                         <i class="fa fa-credit-card"></i>
                                     </button><br>
                                     <button onclick="sorry()" type="button" class="btn btn-secondary"
@@ -283,7 +323,7 @@
                                     <img src="assets/high/birdtoy.jpg" alt="pic1">
                                 </picture>
                                 <div class="overlay-right">
-                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                    <button onclick="produto('produtos/passaros.html')" type="button" class="btn btn-secondary" title="Αγορά">
                                         <i class="fa fa-credit-card"></i>
                                     </button><br>
                                     <button onclick="sorry()" type="button" class="btn btn-secondary"

@@ -15,7 +15,9 @@ function closeside() {
 // var y = window.innerWidth;
 // document.getElementById("demo").innerHTML = y;
 
-
+var produto = (link) =>{
+    window.location.href  = link; 
+}
 
 if (window.innerWidth > 1050) {
     var x = document.getElementById("gettop").parentElement.offsetTop;
