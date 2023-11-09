@@ -5,13 +5,25 @@
     {
         private static $pdo;
 
-        public function __construct(){
+        // public function __construct(){
             
-        }
+        // }
         
         public function phpalert($msg){
             echo "<h2 style='color:red;'>".$msg."</h2>";
         }
+
+		public static function aqlite(){
+
+			// talves fazer uma conexão baseada no que o professor passou
+				$sqlite = New SQLite3();
+				if ($sqlite) {
+					echo 'conectou';
+				}else{
+					echo 'como é amigo??';
+				}
+			// uma conexão baseada no que o professor passou
+		}
 
 		public static function conectar(){
 			if(self::$pdo == null){

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Página do Produto</title>
+    <!-- Adicione os links para os arquivos CSS e JavaScript do Bootstrap -->
+    <link rel="icon" href="../assets/logos/logo.png" type="image/gif" sizes="20x20">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Cabeçalho da Página -->
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: cornflowerblue;" style="padding-left: 8px;">
+            
+            <a class="navbar-brand" href="../" style="padding-left: 8px;"> <img src="../assets/logos/logo_size.jpg" alt="logo" width="40" height="40"> Petshop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../">Pagina Inicial</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da Página -->
+    <main class="container mt-4">
+        <div class="row">
+            <!-- Imagem do Produto -->
+            <div class="col-lg-6">
+                <img src="../assets/high/dogfood.jpg" class="img-fluid" alt="Osso para Cachorro">
+            </div>
+            <!-- Detalhes do Produto -->
+            <div class="col-lg-6">
+                <h1>Ração para Cachorro</h1>
+                <p class="lead">$15.99</p>
+                <p>Descrição do produto</p>
+                <div class="mb-3">
+                    <label for="opcoes">Forma de Pagamento</label>
+                    <select class="form-control" id="opcoes">
+                        <option>Cartão</option>
+                        <option>Debito</option>
+                        <option>Pix</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" onclick="conf()">Comprar</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Avaliações de Clientes -->
+    <br><br>
+    <section class="container mt-4">
+        <h2>Avaliações</h2>
+        <br>
+        <!-- Exiba as avaliações dos clientes aqui -->
+        <div class="media">
+            <div class="media-body">
+                <h5 class="mt-0">Avaliador 1</h5>
+                <p>Excelente produto! Eu daria 5 estrelas. meu cachorro adorou!</p>
+            </div>
+        </div>
+        <div class="media">
+            <div class="media-body">
+                <h5 class="mt-0">Avaliador 2</h5>
+                <p>Boa qualidade, mas preço um pouco alto. Dou 4 estrelas.</p>
+            </div>
+        </div>
+        <!-- Adicione mais avaliações conforme necessário -->
+    </section>
+
+    <!-- Produtos Relacionados -->
+    <section class="container mt-4">
+        <br><br><br>
+        <h2>Produtos Relacionados</h2><br>
+        <!-- Exiba produtos relacionados aqui -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="../assets/high/birdtoy.jpg" class="card-img-top" alt="Produto Relacionado 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração para Pássaros</h5>
+                        <p class="card-text">$5.99</p>
+                        <a href="passaros.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="../assets/high/dogfoodbone.jpg" class="card-img-top" alt="Produto Relacionado 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Osso para Cachorros</h5>
+                        <p class="card-text">$30,50</p>
+                        <a href="foodcachorro.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="../assets/high/foodham.jpg" class="card-img-top" alt="Produto Relacionado 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Comida de hamster</h5>
+                        <p class="card-text">$12.99</p>
+                        <a href="foodramister.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé da Página -->
+    <footer class="container mt-4">
+        <!-- Informações de contato, links úteis, etc. -->
+    </footer>
+
+    <!-- Adicione os links para os arquivos JavaScript do Bootstrap e jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
