@@ -63,20 +63,6 @@ if(isset($_POST['acao'])){
   
   <body>
   <div class="topnav">
-            
-
-      <!-- <form method="post">
-          <h3>Faça seu cadastro no nosso site</h3>
-  
-          <input type="text" name="email" placeholder="Digite seu e-mail" /> 
-          <input type="text" name="nome" placeholder="Seu nome" />
-          <input type="text" name="user" placeholder="Nome de usuario" />
-          <input type="password" name="senha" placeholder="Digite Sua senha" />
-          <p><a href="../">Voltar</a></p>
-          <input type="submit" nome="acao" value="Enviar" />
-      </form> -->
-
-
       <form method="post">
 			<h3 style="margin-bottom:35px;" >Cadastrar usuário</h3>
 			<input type="text" name="user" placeholder="Login..." required>

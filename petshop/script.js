@@ -19,6 +19,11 @@ var produto = (link) =>{
     window.location.href  = link; 
 }
 
+var produtopesquisa = (link) =>{
+    var pesquisa =  document.getElementById("pesquisa").value;
+    window.location.href  = link+pesquisa; 
+}
+
 if (window.innerWidth > 1050) {
     var x = document.getElementById("gettop").parentElement.offsetTop;
     document.getElementById("gettop").style.top = x + "px";

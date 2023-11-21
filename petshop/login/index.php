@@ -1,7 +1,6 @@
 <?php 
 include("php/config.php");
 if (isset($_SESSION['login']) == true) {
-    echo "<script>alert('Bem vindo! você já está logado!')</script>";
     header('Location: ../');
    //die();
 }

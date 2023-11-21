@@ -36,8 +36,9 @@
                         <img id="logo" src="assets/logos/other_logo.png" alt="site-logo" width="40px">
                     </picture>
                 </a>
-                <input type="text" class="search-form">
-                <span class="input-text" onclick="sorry()"><i class="fa fa-search"></i></span>
+                <form action="produtos/páginas/lista.php" method="GET" >
+                    <input type="text" name="produto"  class="search-form"/><span class="input-text" onclick="sorry()"><i class="fa fa-search"></i></span>
+                </form>
             </div>
             <div class="account-menu">
                 <ul>
@@ -233,7 +234,7 @@
                                     <img src="assets/high/dogfoodbone.jpg" alt="pic1">
                                 </picture>
                                 <div class="overlay-right">
-                                    <button onclick="produto('produtos/produto.html')" type="button" class="btn btn-secondary" title="Αγορά">
+                                    <button onclick="produto('produtos/produto.php?id=2')" type="button" class="btn btn-secondary" title="Αγορά">
                                         <i class="fa fa-credit-card"></i>
                                     </button><br>
                                     <button onclick="sorry()" type="button" class="btn btn-secondary"
@@ -260,7 +261,7 @@
                                     <img src="assets/high/dogfood.jpg" alt="pic1">
                                 </picture>
                                 <div class="overlay-right">
-                                    <button onclick="produto('produtos/foodcachorro.html')" type="button" class="btn btn-secondary" title="Αγορά">
+                                    <button onclick="produto('produtos/produto.php?id=1')" type="button" class="btn btn-secondary" title="Αγορά">
                                         <i class="fa fa-credit-card"></i>
                                     </button><br>
                                     <button onclick="sorry()" type="button" class="btn btn-secondary"
@@ -310,8 +311,8 @@
                         <div class="col-md-3">
                             <div class="prod-top">
                                 <picture>
-                                    <source media="(min-width: 1050px)" srcset="img/produtos/racao_passaro.jpg">
-                                    <img src="img/produtos/racao_passaro.jpg" alt="pic1">
+                                    <source media="(min-width: 1050px)" srcset="assets/low/birdtoy.jpg">
+                                    <img src="assets/high/birdtoy.jpg" alt="pic1">
                                 </picture>
                                 <div class="overlay-right">
                                     <button onclick="produto('produtos/passaros.html')" type="button" class="btn btn-secondary" title="Αγορά">
@@ -331,38 +332,8 @@
                                 <i class="fa fa-star-o"></i>
                                 <h3>Ração de Pássaro
                                 </h3>
-                                <h5>14,99$</h5>
+                                <h5>5,99$</h5>
                             </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="prod-top">
-                                <picture>
-                                    <source media="(min-width: 1050px)" srcset="img/produtos/racao_gato.jpg">
-                                    <img src="img/produtos/racao_gato.jpg" alt="pic1">
-                                </picture>
-                                <div class="overlay-right">
-                                    <button onclick="produto('produtos/passaros.html')" type="button" class="btn btn-secondary" title="Αγορά">
-                                        <i class="fa fa-credit-card"></i>
-                                    </button><br>
-                                    <button onclick="sorry()" type="button" class="btn btn-secondary"
-                                        title="Προσθήκη στο Καλάθι">
-                                        <i class="fa fa-cart-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-bot text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <h3>Ração de Gato
-                                </h3>
-                                <h5>17,99$</h5>
-                            </div>
-                        </div>
-                        
                         </div>
                     </div>
                 </div>
@@ -482,6 +453,62 @@
                                 <h5>4,99$</h5>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="prod-top">
+                                <picture>
+                                    <source media="(min-width: 1050px)" srcset="assets/low/birdboxtrees.jpg">
+                                    <img src="assets/high/birdboxtrees.jpg" alt="pic1">
+                                </picture>
+                                <div class="overlay-right">
+                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                        <i class="fa fa-credit-card"></i>
+                                    </button><br>
+                                    <button onclick="sorry()" type="button" class="btn btn-secondary"
+                                        title="Προσθήκη στο Καλάθι">
+                                        <i class="fa fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-bot text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <h3>Casa dos Pássaros</h3>
+                                <h5>50,99$</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="prod-top">
+                                <picture>
+                                    <source media="(min-width: 1050px)" srcset="assets/low/birdboxwood.jpg">
+                                    <img src="assets/high/birdboxwood.jpg" alt="pic1">
+                                </picture>
+                                <div class="overlay-right">
+                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                        <i class="fa fa-credit-card"></i>
+                                    </button><br>
+                                    <button onclick="sorry()" type="button" class="btn btn-secondary"
+                                        title="Προσθήκη στο Καλάθι">
+                                        <i class="fa fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-bot text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <h3>Casa dos Pássaros Branca</h3>
+                                <h5>83,99$</h5>
+                            </div>
+                        </div>
 
                         <div class="col-md-3">
                             <div class="prod-top">
@@ -505,11 +532,39 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half-o"></i>
-                                <h3>Casa para Pássaros</h3>
-                                <h5>39,99$</h5>
+                                <h3>Casa dos Pássaros Amarela</h3>
+                                <h5>21,99$</h5>
                             </div>
                         </div>
 
+                        <div class="col-md-3">
+                            <div class="prod-top">
+                                <picture>
+                                    <source media="(min-width: 1050px)" srcset="assets/low/birdtoy.jpg">
+                                    <img src="assets/high/birdtoy.jpg" alt="pic1">
+                                </picture>
+                                <div class="overlay-right">
+                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                        <i class="fa fa-credit-card"></i>
+                                    </button><br>
+                                    <button onclick="sorry()" type="button" class="btn btn-secondary"
+                                        title="Προσθήκη στο Καλάθι">
+                                        <i class="fa fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-bot text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <h3>Brinquedo do pássaro</h3>
+                                <h5>4,99$</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-3">
                             <div class="prod-top">
                                 <picture>
@@ -517,7 +572,7 @@
                                     <img src="assets/high/cattoy.jpg" alt="pic1">
                                 </picture>
                                 <div class="overlay-right">
-                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                    <button onclick="produto('produtos/produto.php?id=8')" type="button" class="btn btn-secondary" title="Αγορά">
                                         <i class="fa fa-credit-card"></i>
                                     </button><br>
                                     <button onclick="sorry()" type="button" class="btn btn-secondary"
@@ -536,7 +591,7 @@
                                 <h5>8,99$</h5>
                             </div>
                         </div>
-                        
+
                         <div class="col-md-3">
                             <div class="prod-top">
                                 <picture>
@@ -570,7 +625,7 @@
                                     <img src="assets/high/catbag.jpg" alt="pic1">
                                 </picture>
                                 <div class="overlay-right">
-                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                    <button onclick="produto('produtos/produto.php?id=7')" type="button" class="btn btn-secondary" title="Αγορά">
                                         <i class="fa fa-credit-card"></i>
                                     </button><br>
                                     <button onclick="sorry()" type="button" class="btn btn-secondary"
@@ -603,8 +658,8 @@
                         <div class="col-md-3">
                             <div class="prod-top">
                                 <picture>
-                                    <source media="(min-width: 1050px)" srcset="img/produtos/roupa_cirurgica.jpg">
-                                    <img src="img/produtos/roupa_cirurgica.jpg" alt="pic1">
+                                    <source media="(min-width: 1050px)" srcset="assets/low/dogclothes.jpg">
+                                    <img src="assets/high/dogclothes.jpg" alt="pic1">
                                 </picture>
                                 <div class="overlay-right">
                                     <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
@@ -621,90 +676,63 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <h3>Roupa Cirúrgica para Gatos</h3>
-                                <h5>79,99$</h5>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="prod-top">
-                                <picture>
-                                    <source media="(min-width: 1050px)" srcset="img/produtos/capa_chuva.jpg">
-                                    <img src="img/produtos/capa_chuva.jpg" alt="pic1">
-                                </picture>
-                                <div class="overlay-right">
-                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
-                                        <i class="fa fa-credit-card"></i>
-                                    </button><br>
-                                    <button onclick="sorry()" type="button" class="btn btn-secondary"
-                                        title="Προσθήκη στο Καλάθι">
-                                        <i class="fa fa-cart-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-bot text-center">
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <h3>Capa de Chuva para Cães</h3>
-                                <h5>214,99$</h5>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="prod-top">
-                                <picture>
-                                    <source media="(min-width: 1050px)" srcset="img/produtos/juba.jpg">
-                                    <img src="img/produtos/juba.jpg" alt="pic1">
-                                </picture>
-                                <div class="overlay-right">
-                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
-                                        <i class="fa fa-credit-card"></i>
-                                    </button><br>
-                                    <button onclick="sorry()" type="button" class="btn btn-secondary"
-                                        title="Προσθήκη στο Καλάθι">
-                                        <i class="fa fa-cart-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-bot text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <h3>Fantasia Juba de Leão para Gatos</h3>
-                                <h5>74,99$</h5>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="prod-top">
-                                <picture>
-                                    <source media="(min-width: 1050px)" srcset="img/produtos/bandana.jpg">
-                                    <img src="img/produtos/bandana.jpg" alt="pic1">
-                                </picture>
-                                <div class="overlay-right">
-                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
-                                        <i class="fa fa-credit-card"></i>
-                                    </button><br>
-                                    <button onclick="sorry()" type="button" class="btn btn-secondary"
-                                        title="Προσθήκη στο Καλάθι">
-                                        <i class="fa fa-cart-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-bot text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <h3>Bandana para Cães e Gatos</h3>
+                                <h3>Roupas de banana para Cachorros</h3>
                                 <h5>19,99$</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="prod-top">
+                                <picture>
+                                    <source media="(min-width: 1050px)" srcset="assets/low/dogmask.jpg">
+                                    <img src="assets/high/dogmask.jpg" alt="pic1">
+                                </picture>
+                                <div class="overlay-right">
+                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                        <i class="fa fa-credit-card"></i>
+                                    </button><br>
+                                    <button onclick="sorry()" type="button" class="btn btn-secondary"
+                                        title="Προσθήκη στο Καλάθι">
+                                        <i class="fa fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-bot text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <h3>Máscara para Cachorros</h3>
+                                <h5>4,99$</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="prod-top">
+                                <picture>
+                                    <source media="(min-width: 1050px)" srcset="assets/low/catclothes.jpg">
+                                    <img src="assets/high/catclothes.jpg" alt="pic1">
+                                </picture>
+                                <div class="overlay-right">
+                                    <button onclick="produto('produtos/produto.php?id=9')" type="button" class="btn btn-secondary" title="Αγορά">
+                                        <i class="fa fa-credit-card"></i>
+                                    </button><br>
+                                    <button onclick="sorry()" type="button" class="btn btn-secondary"
+                                        title="Προσθήκη στο Καλάθι">
+                                        <i class="fa fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-bot text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <h3>Camisa de gato</h3>
+                                <h5>14,99$</h5>
                             </div>
                         </div>
                     </div>
@@ -721,8 +749,8 @@
                         <div class="col-md-3">
                             <div class="prod-top">
                                 <picture>
-                                    <source media="(min-width: 1050px)" srcset="img/produtos/bebedouro_passaro.jpg">
-                                    <img src="img/produtos/bebedouro_passaro.jpg" alt="pic1">
+                                    <source media="(min-width: 1050px)" srcset="assets/low/dogmask.jpg">
+                                    <img src="assets/high/dogmask.jpg" alt="pic1">
                                 </picture>
                                 <div class="overlay-right">
                                     <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
@@ -736,20 +764,20 @@
                             </div>
                             <div class="prod-bot text-center">
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
                                 <i class="fa fa-star-o"></i>
                                 <i class="fa fa-star-o"></i>
                                 <i class="fa fa-star-o"></i>
-                                <h3>Bebedouro Porta Remédio para Pássaros</h3>
-                                <h5>3,99$</h5>
+                                <i class="fa fa-star-o"></i>
+                                <h3>Mascara para Cachorros</h3>
+                                <h5>4,99$</h5>
                             </div>
                         </div>
 
                         <div class="col-md-3">
                             <div class="prod-top">
                                 <picture>
-                                    <source media="(min-width: 1050px)" srcset="img/produtos/antibiotico.jpg">
-                                    <img src="img/produtos/antibiotico.jpg" alt="pic1">
+                                    <source media="(min-width: 1050px)" srcset="assets/low/dogmed.jpg">
+                                    <img src="assets/high/dogmed.jpg" alt="pic1">
                                 </picture>
                                 <div class="overlay-right">
                                     <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
@@ -767,116 +795,8 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-o"></i>
-                                <h3>Antibiótico para Cães e Gatos</h3>
-                                <h5>94,99$</h5>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="prod-top">
-                                <picture>
-                                    <source media="(min-width: 1050px)" srcset="img/produtos/pomada.jpg">
-                                    <img src="img/produtos/pomada.jpg" alt="pic1">
-                                </picture>
-                                <div class="overlay-right">
-                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
-                                        <i class="fa fa-credit-card"></i>
-                                    </button><br>
-                                    <button onclick="sorry()" type="button" class="btn btn-secondary"
-                                        title="Προσθήκη στο Καλάθι">
-                                        <i class="fa fa-cart-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-bot text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <h3>Pomada Cicatrizante</h3>
-                                <h5>59,99$</h5>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="prod-top">
-                                <picture>
-                                    <source media="(min-width: 1050px)" srcset="img/produtos/probiotico.jpg">
-                                    <img src="img/produtos/probiotico.jpg" alt="pic1">
-                                </picture>
-                                <div class="overlay-right">
-                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
-                                        <i class="fa fa-credit-card"></i>
-                                    </button><br>
-                                    <button onclick="sorry()" type="button" class="btn btn-secondary"
-                                        title="Προσθήκη στο Καλάθι">
-                                        <i class="fa fa-cart-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-bot text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <h3>Probiótico para Equinos</h3>
-                                <h5>129,99$</h5>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="prod-top">
-                                <picture>
-                                    <source media="(min-width: 1050px)" srcset="img/produtos/colirio.jpg">
-                                    <img src="img/produtos/colirio.jpg" alt="pic1">
-                                </picture>
-                                <div class="overlay-right">
-                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
-                                        <i class="fa fa-credit-card"></i>
-                                    </button><br>
-                                    <button onclick="sorry()" type="button" class="btn btn-secondary"
-                                        title="Προσθήκη στο Καλάθι">
-                                        <i class="fa fa-cart-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-bot text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <h3>Colírio 5ml</h3>
-                                <h5>149,99$</h5>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="prod-top">
-                                <picture>
-                                    <source media="(min-width: 1050px)" srcset="img/produtos/spray.jpg">
-                                    <img src="img/produtos/spray.jpg" alt="pic1">
-                                </picture>
-                                <div class="overlay-right">
-                                    <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
-                                        <i class="fa fa-credit-card"></i>
-                                    </button><br>
-                                    <button onclick="sorry()" type="button" class="btn btn-secondary"
-                                        title="Προσθήκη στο Καλάθι">
-                                        <i class="fa fa-cart-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-bot text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <h3>Spray Bactericida</h3>
-                                <h5>79,99$</h5>
+                                <h3>Coleira Médica para Cachorros</h3>
+                                <h5>14,99$</h5>
                             </div>
                         </div>
                     </div>
@@ -901,27 +821,6 @@
                             <p>
                                 Esse projeto esta sendo desenvolvido pelo grupo de alunos de html e css do
                                 professor Davi Barros. Esse projeto é sobre uma loja virtual de petshop!!
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                Tecnologias
-                            </h6>
-                            <p>
-                                <a href="#!" class="text-reset">html</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">css</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">bootstrap</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">PHP</a>
                             </p>
                         </div>
                         <!-- Grid column -->
