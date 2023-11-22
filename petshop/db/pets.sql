@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 18/11/2023 às 02:32
+-- Tempo de geração: 22/11/2023 às 01:09
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -20,6 +20,28 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `pets`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `categorias`
+--
+
+CREATE TABLE `categorias` (
+  `id` int(11) NOT NULL,
+  `nome` text NOT NULL,
+  `idscrool` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `categorias`
+--
+
+INSERT INTO `categorias` (`id`, `nome`, `idscrool`) VALUES
+(1, 'Comidas', 'food'),
+(2, 'Acessórios', 'toys'),
+(3, 'Roupas', 'clothes'),
+(4, 'Remédios', 'med');
 
 -- --------------------------------------------------------
 
@@ -59,11 +81,42 @@ INSERT INTO `produtos` (`id`, `nome`, `preco`, `descricao`, `url`, `imagem`, `gr
 (14, 'Máscara para Cachorros', '4,99$', 'Máscara para Cachorros deixe seu doguinho protegido de doenças', '', 'dogmask.jpg', 'Cachorros', 'Roupas'),
 (15, 'Frisbee de brinquedo', '21,99$', 'Frisbee de brinquedo feito de plástico - cor vermelha', '', 'dogtoyfris.jpg', 'Cachorros', 'Acessórios'),
 (16, 'Coleira Médica para Cachorros', '14,99$', 'Coleira Médica para Cachorros feita de plástico, garantimos que seu cachorro ficara confortavel', '', 'dogmed.jpg', 'Cachorros', 'Remédios'),
-(17, 'Mascara médica para Cachorros', '4,99$', 'Mascara para Cachorros feita para evitar problemas respiratórios', '', 'dogmask.jpg', 'Cachorros', 'Remédios');
+(17, 'Mascara médica para Cachorros', '4,99$', 'Mascara para Cachorros feita para evitar problemas respiratórios', '', 'dogmask.jpg', 'Cachorros', 'Remédios'),
+(18, 'Roupa Cirúrgica para Gatos', '79,99$', 'Roupa vermelha para gatos adultos', '', 'roupa_cirurgica.jpg', 'Gatos', 'Roupas'),
+(19, 'Bebedouro Porta Remédio para Pássaros', '3,99$', 'Bebedouro Porta Remédio para Pássaros </br> Material: Plástico <br/> Tamanho: 15 cm', '', 'bebedouro_passaro.jpg', 'Pássaros ', 'Remédios'),
+(20, 'Pomada Cicatrizante', '20,99$', 'Pomada curativa para pets não se preocupe que ela não arde', '', 'pomada.jpg', 'Cachorros', 'Remédios');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `nome` text NOT NULL,
+  `login` text NOT NULL,
+  `senha` text NOT NULL,
+  `email` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nome`, `login`, `senha`, `email`) VALUES
+(1, 'Filipe', 'admin', 'admin123', 'filipemb400@gmail.com'),
+(8, 'pedro', 'admin123', 'admin12311', 'pedro400a@gmail.com');
 
 --
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices de tabela `categorias`
+--
+ALTER TABLE `categorias`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices de tabela `produtos`
@@ -72,14 +125,32 @@ ALTER TABLE `produtos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices de tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT para tabelas despejadas
 --
+
+--
+-- AUTO_INCREMENT de tabela `categorias`
+--
+ALTER TABLE `categorias`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT de tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -60,7 +60,7 @@
 </head>
 </head>
 <body>
-<div class="topnav">
+<div class="">
             <div class="search-line">
                 <i class="fa fa-paw" id="open-btn" onclick="openside()"></i>
                 <i class="fa fa-times" id="close-btn" onclick="closeside()"></i>
@@ -72,7 +72,7 @@
                     </picture>
                 </a>
                 <form method="GET" >
-                <input type="text" name="produto" id="pesquisa" class="search-form"/><span class="input-text" onclick="produtopesquisa('lista.php?produto=')"><i class="fa fa-search"></i></span>
+                <input type="text" name="produto" placeholder="pesquisar" id="pesquisa" class="search-form"/><span class="input-text" onclick="produtopesquisa('lista.php?produto=')"><i class="fa fa-search"></i></span>
                 </form>
             </div>
             <div class="account-menu">

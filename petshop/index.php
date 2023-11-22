@@ -48,7 +48,7 @@ $categorias = $sql->fetchAll();
                     </picture>
                 </a>
                 <form action="produtos/páginas/lista.php" method="GET" >
-                    <input type="text" name="produto" id="pesquisa" class="search-form"/><span class="input-text" onclick="produtopesquisa('produtos/páginas/lista.php?produto=')"><i class="fa fa-search"></i></span>
+                    <input type="text" placeholder="pesquisar" name="produto" id="pesquisa" class="search-form"/><span class="input-text" onclick="produtopesquisa('produtos/páginas/lista.php?produto=')"><i class="fa fa-search"></i></span>
                 </form>
             </div>
             <div class="account-menu">
@@ -64,7 +64,21 @@ $categorias = $sql->fetchAll();
                 <button onclick="produto('produtos/páginas/lista.php?produto=Pássaros')" type="button" class="btn btn-custom mr-2">Pássaros</button>
                 <button onclick="produto('produtos/páginas/lista.php?produto=Hamister')" type="button" class="btn btn-custom">Hamister</button>
             </div>
+            <nav class="unic navbar navbar-expand-lg navbar-light"  style="padding-left: 8px;">
+                <a class="unic navbar-brand" href="#" style="padding-left: 90%;">
+                <button class="unic  navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="unic collapse navbar-collapse" id="navbarNav">
+                    <ul class="unic">
+                        <li><a href="login/cadastro.php" onclick="sorry()">Carrinho</a><i class="fa fa-shopping-cart"></i></li>
+                        <li><a href="login/cadastro.php" onclick="">Inscrição</a></li>
+                        <li><a href="login/index.php" onclick="">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div> 
+
             <div class="slideshow">
                 <div id="slideshow" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
